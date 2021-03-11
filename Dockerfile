@@ -2,8 +2,9 @@ FROM debian:bullseye
 LABEL maintainer="Artis3n"
 
 ENV DEBIAN_FRONTEND noninteractive
-
 ENV pip_packages "ansible"
+
+WORKDIR /
 
 # Install dependencies.
 RUN apt-get update \
